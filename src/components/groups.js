@@ -20,11 +20,3 @@ export default class Groups extends Component {
     )
   }
 }
-
-export default connect((state) => state, { requestPageOfPlans })(MyComponent);
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchGroups }, dispatch);
-}
-
-// No state needed here, so the null
-export default connect(null, mapDispatchToProps)(SearchBar);
